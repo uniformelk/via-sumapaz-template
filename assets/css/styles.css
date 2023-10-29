@@ -11,6 +11,9 @@
     --vinci: "vinci";
 }
 /*---------Globales----------*/
+.w-auto{
+    width: fit-content!important;
+}
     .container{
         max-width: 1400px!important;
     }
