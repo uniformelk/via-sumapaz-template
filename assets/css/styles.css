@@ -3,14 +3,88 @@
     font-family: "Vinci";
     src: url("../fonts/VinciSansRegular.otf");
 }
+@font-face {
+    font-family: trenda-black;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-Black.ttf);
+    }
+    @font-face {
+    font-family: trenda-blackIt;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-BlackIt.ttf);
+    }
+    @font-face {
+    font-family: trenda-bold;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-Bold.ttf);
+    }
+    @font-face {
+    font-family: trenda-Heavy;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-Heavy.ttf);
+    }
+    @font-face {
+    font-family: trenda-Regular;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-Regular.ttf);
+    }
+    @font-face {
+    font-family: trenda-Semibold;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/Trenda-Semibold.ttf);
+    }
+    @font-face {
+    font-family: vinci-sans-bold;
+    src: url(https://via40express.com/wp-content/themes/via-child/fonts/vinci_sans_bold.ttf);
+    }
 :root{
-    --color-primary: #052145;
-    --color-secondary: #F59F27;
-    --color-terciary: #009669;
-    --white: #fff;
-    --vinci: "vinci";
+    --trenda-black: trenda-black, sans-serif;
+        --trenda-blackIt: trenda-blackIt, sans-serif;
+        --trenda-bold: trenda-bold, sans-serif;
+        --trenda-Heavy: trenda-Heavy, sans-serif;
+        --trenda-Regular: trenda-Regular, sans-serif;
+        --trenda-Semibold: trenda-Semibold, sans-serif;
+        --vinci: "vinci";
+        --vinci-sans-bold: vinci-sans-bold, sans-serif;
+        --color-primary: #052145;
+        --color-secondary: #F59F27;
+        --color-terciary: #009669;
+        --color-cuarto: #DED700;
+        --white: #fff;
 }
-/*---------Globales----------*/
+/*----------------------------------------------
+--------------------Globales--------------------
+--------------------------------------------------*/
+.relative{
+    position: relative;
+}
+.titulos1{
+    font-family: var(--trenda-black);
+}
+.titulos2{
+    font-family: var(--trenda-bold);
+}
+
+
+.parrafo-2{
+    font-family: var(--trenda-Semibold);
+    font-size: 1.813rem;
+}
+.parrafos-3{
+    font-family: var(--trenda-Semibold);
+    font-size: 2.916rem;
+}
+
+
+#movilidadPos .m-negativo{
+    margin: auto;
+    margin-left: -150px;
+    z-index: 2000;
+    background-color: #fff;
+    min-height: 250px;
+    padding: 30px 0;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.m-negativo hr{
+    width: 10%;
+    border: 2px solid #007E6B;
+    border-radius: 20px;
+}
+
 .w-auto{
     width: fit-content!important;
 }
@@ -27,7 +101,7 @@
         }
     }
     p{
-        font-size: 14px;
+        font-size: 1.2rem;
         font-family: 'Open Sans';
         font-weight: 300;
     }
@@ -84,6 +158,7 @@
     }
     .title{
         position: relative;
+        font-size: 2.5rem;
     }
     .title:before{
         content: url(../img/utils/formas-circulares.png);
@@ -94,6 +169,7 @@
         height: auto;
     }
     .title2{
+        font-size: 2.5rem;
         position: relative;
     }
     .title2:before{
@@ -107,15 +183,20 @@
     .img-fluid-1-4{
         width: 50%;
     }
-/*---------Fin Globales----------*/
+/*----------------------------------------------
+------------------Fin Globales------------------
+------------------------------------------------*/
+/*------------------------------------------
+--------------------Home--------------------
+--------------------------------------------*/
 /*---------Seccion 1 Home----------*/
-    .section_uno .carousel-indicators{
+    #home-2023 .section_uno .carousel-indicators{
         background-color: var(--white);
         border-radius: 40px;
         width: fit-content;
         left: 30%;
     }
-    .section_uno .carousel-indicators li{
+    #home-2023 .section_uno .carousel-indicators li{
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -124,11 +205,11 @@
         background-size: cover;
         border: 1px solid transparent;
     }
-    .section_uno .carousel-indicators li.active{
+    #home-2023 .section_uno .carousel-indicators li.active{
         border-color: var(--color-secondary);
         transform: scale(1.2);
     }
-    .section_uno .carousel-indicators li.active {
+    #home-2023 .section_uno .carousel-indicators li.active {
         width: 40px;
         height: 40px;
         border: 3px solid transparent;
@@ -136,7 +217,7 @@
         position: relative;
         box-sizing: border-box;
     }
-    .section_uno .carousel-indicators li.active::before {
+    #home-2023 .section_uno .carousel-indicators li.active::before {
         content: "";
         position: absolute;
         box-sizing: border-box;
@@ -146,15 +227,15 @@
         animation: prixClipFix 5s  linear;
     }
     @media (max-width:768px) {
-        .section_uno .carousel-indicators{
+        #home-2023 .section_uno .carousel-indicators{
             left: 25%;
             bottom: -10px;
         }
-        .section_uno .carousel-indicators li{
+        #home-2023 .section_uno .carousel-indicators li{
             width: 25px;
             height: 25px
         }
-        .section_uno .carousel-indicators li.active {
+        #home-2023 .section_uno .carousel-indicators li.active {
             width: 25px;
             height: 25px;
         }
@@ -264,27 +345,27 @@ div.bg-gray{
     padding: 50px 80px;
     min-height: 230px;
 }
-.section_cinco .carousel-item hr{
+#home-2023 .section_cinco .carousel-item hr{
     width: 10%;
     position: absolute;
     left: 80px;
     top: 70px;
 }
-.section_cinco .carousel-control-prev-icon{
+#home-2023 .section_cinco .carousel-control-prev-icon{
     background-image: url(../img/utils/prev.png);
     height: 40px;
     width: 40px;
 }
-.section_cinco .carousel-control-next-icon{
+#home-2023 .section_cinco .carousel-control-next-icon{
     background-image: url(../img/utils/next.png);
     width: 40px;
     height: 40px;
 }
-.section_cinco .carousel-indicators{
+#home-2023 .section_cinco .carousel-indicators{
     top: -80px;
     height: 30px;
 }
-.section_cinco .carousel-indicators li{
+#home-2023 .section_cinco .carousel-indicators li{
     text-indent: 0px;
     font-size: 10px;
     width: fit-content;
@@ -296,7 +377,7 @@ div.bg-gray{
     transition: color .6s ease;
     border: none;
 }
-.section_cinco .carousel-indicators li.active{
+#home-2023 .section_cinco .carousel-indicators li.active{
     color: var(--color-terciary);
     
 }
@@ -312,24 +393,24 @@ div.bg-gray{
         min-height: 200px;
         text-align: center;
     }
-    .section_cinco .carousel-indicators{
+    #home-2023 .section_cinco .carousel-indicators{
         top: 0px;
         left: -20px;
         width: 80%;
         text-align: center;
     }
-    .section_cinco .carousel-control-prev-icon{
+    #home-2023 .section_cinco .carousel-control-prev-icon{
         height: 20px;
         width: 20px;
     }
-    .section_cinco .carousel-control-next-icon{
+    #home-2023 .section_cinco .carousel-control-next-icon{
         width: 20px;
         height: 20px;
     }
-    .section_cinco .carousel-control-next{
+    #home-2023 .section_cinco .carousel-control-next{
         margin-right: -20px;
     }
-    .section_cinco .carousel-control-prev{
+    #home-2023 .section_cinco .carousel-control-prev{
         margin-left: -20px;
     }
 }
@@ -440,3 +521,276 @@ div.bg-gray{
         margin: 10px 0;
     }
 }
+/*-----------------------------------------------
+----------------Movilidad Positiva----------------
+--------------------------------------------------*/
+.seccion-cinco .titulos1{
+    color: var(--color-primary);
+}
+.parrafos{
+    font-family: var(--vinci);
+    font-size: 1.2rem;
+}
+#movilidadPos .banner{
+        background-image: url(https://via40express.com/wp-content/uploads/2023/07/BannerMovilidadPositiva.jpg);
+        min-height: 60vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    #movilidadPos .carousel-indicators{
+        max-width: 30%;
+		z-index:3000;
+		
+    }
+    @media(max-width:992px){
+        .carousel-indicators{
+            top: 20px;
+            left: 20%;
+        }
+    }
+    #movilidadPos .carousel-indicators li{
+        background-clip: inherit;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 15px;
+        border-top: none;
+		background-color: #cecece;
+    }
+    #movilidadPos .carousel-indicators li.active{
+        background-color: #007E6B;
+    }
+    #movilidadPos .banner{
+        background-position: left;
+    }
+    @media(max-width:1200px){
+        #movilidadPos .banner{
+            background-position: 10% 10%;
+			min-height: 50vh;
+        }
+    }
+    @media(max-width:992px){
+        #movilidadPos .banner{
+            background-position: 20% 10%;
+			min-height: 40vh;
+        }
+    }
+    @media(max-width:768px){
+        #movilidadPos .banner{
+            background-position: 0% 20%;
+			min-height: 29vh;
+        }
+    }
+@media(max-width:600px){
+        #movilidadPos .banner{
+            min-height: 20vh;
+        }
+    }
+@media(max-width:450px){
+        #movilidadPos .banner{
+            min-height: 20vh;
+        }
+    }
+@media(max-width:400px){
+        #movilidadPos .banner{
+            min-height: 17vh;
+        }
+    }
+    #movilidadPos .seccion_1 h2{
+        color: var(--color-primary);
+        font-size: 2.5rem;
+    }
+    #movilidadPos .relative{
+        width: 100%;
+        height: 50px;
+    }
+    #movilidadPos .seccion_1 hr{
+        border: 2px solid var(--color-cuarto);
+        width: 10%;
+        border-radius: 20px;
+        position: absolute;
+        left: 0;
+    }
+    #movilidadPos .seccion_1 .parrafos{
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    #movilidadPos .seccion_1 .parrafos b{
+        font-family: var(--trenda-black);
+    }
+    #movilidadPos .seccion_1 .row .titulos1{
+        color: var(--color-primary);
+        margin-left: 20px;
+        line-height: 1.8rem;
+        font-family: var(--trenda-bold);
+    }
+    #movilidadPos .seccion_uno{
+        padding: 50px 0;
+    }
+#movilidadPos .m-negativo h2{
+	font-size: 2rem;
+	font-family: var(--trenda-black);
+}
+    #movilidadPos .seccion_uno .color-1 h2{
+        color: #007E6B;
+    }
+    #movilidadPos .seccion_uno .color-1 hr{
+        border-color: #007E6B;
+    }
+    #movilidadPos .seccion_uno .color-2 h2{
+        color: #DD205D;
+    }
+    #movilidadPos .seccion_uno .color-2 hr{
+        border-color: #DD205D;
+    }
+    #movilidadPos .seccion_uno .color-3 h2{
+        color: #762868;
+    }
+    #movilidadPos .seccion_uno .color-3 hr{
+        border-color: #762868;
+    }
+    #movilidadPos .seccion_uno .color-4 h2{
+        color: #61AEDD;
+    }
+    #movilidadPos .seccion_uno .color-4 hr{
+        border-color: #61AEDD;
+    }
+    #movilidadPos .seccion_uno .color-5 h2{
+        color: #EA9433;
+    }
+    #movilidadPos .seccion_uno .color-5 hr{
+        border-color: #EA9433;
+    }
+    #movilidadPos .seccion-cinco .tituloP{
+        width: fit-content;
+        margin: auto;
+        background-color: #F3F3F3;
+        padding: 15px 30px;
+        border-radius: 0 20px 0 20px;
+        position: relative;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);;
+    }
+    #movilidadPos .seccion-cinco h3 img{
+        position: absolute;
+        left: -20px;
+        top: 20px;
+        width: 40px;
+    }
+    #movilidadPos .grid .item{
+		width: 30%;
+        border-radius: 0 30px 0 30px;
+        background-repeat: no-repeat;
+        background-position: top left;
+        padding: 20px 30px;
+        transition: all ease 1s;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        min-height: 150px;
+        background-color: #F3F3F3;
+    }
+    #movilidadPos .grid {
+        grid-column-gap: 40px ;
+        grid-row-gap: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+        padding-bottom: 30px;
+    }
+@media(max-width:992px){
+	#movilidadPos .grid .item{
+		width: 47%;
+	}
+}
+@media(max-width:768px){
+	#movilidadPos .grid .item{
+		width: 100%;
+	}
+}
+    #movilidadPos .grid .item:hover{
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+    
+    #movilidadPos .grid .item h3{
+        font-family: var(--trenda-bold);
+        font-size: 1.3rem;
+        margin: auto;
+        margin-top: 20px;
+        color: var(--color-primary);
+    }
+    #movilidadPos .grid .row1{
+        background-image: url(../img/utils/row1.png);
+    }
+    
+    #movilidadPos .grid .row2{
+        background-image: url(../img/utils/row2.png);
+    }
+    
+    #movilidadPos .grid .row3{
+        background-image: url(../img/utils/row3.png);
+    }
+    
+    #movilidadPos .grid .row4{
+        background-image: url(../img/utils/row4.png);
+    }
+    
+    #movilidadPos .grid .row5{
+        background-image: url(../img/utils/row5.png);
+    }
+    
+    #movilidadPos .grid .row6{
+        background-image: url(../img/utils/row6.png);
+    }
+    
+	#movilidadPos .grid .row7{
+        position: relative;
+    }
+    #movilidadPos .grid .row7 img.row{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    #movilidadPos .grid .row7 .col-4{
+        position: relative;
+    }
+    #movilidadPos .grid .row7 .img-vinci{
+        max-width: 110%;
+        position: absolute;
+        top: -60px;;
+        left: 0;
+        z-index: 2;
+    }
+    
+	#movilidadPos .grid .vinci{
+        width: 40%;
+    }
+	#movilidadPos .grid .row8{
+        background-image: url(../img/utils/row8.png);
+    }
+    
+    #movilidadPos .m-negativo{
+        margin: auto;
+        margin-left: -250px;
+        z-index: 2000;
+        background-color: #fff;
+        min-height: 250px;
+        padding: 30px 0;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
+    
+    @media(max-width: 1600px){
+        #movilidadPos .m-negativo{
+            margin-left: -240px;
+        }
+    }
+    @media(max-width: 992px){
+        #movilidadPos .m-negativo{
+            margin-left: 0;
+        }
+        #movilidadPos .grid .vinci{
+            width: 90%;
+        }
+    }
+   
